@@ -42,7 +42,9 @@ get_header();
     </h1>
     <div class="mv-sm-txt" data-aos="fade-up" data-aos-delay="7500" data-aos-duration="1500">
       <p>
-        Everyone can rest assured Medical care, nursing care, <br>and childcare to a society that accepts
+      超少子高齢化社会が進む日本で、医療・介護・保育人材の不足は深刻な問題です。<br>
+      私たちは医療・介護・保育を支える人たちが抱える課題解決の支援を通じて、<br>
+      誰もが安心して医療・介護・保育を受けられる社会の実現に貢献します。
       </p>
     </div>
   </div>
@@ -53,13 +55,10 @@ get_header();
         <span class="eng-ttl">About us</span>
         私たちについて
       </h2>
-      <h3 class="about-sub-ttl">価値ある人生、一度きりの人生 <br>
-        相手の立場になって深く考える
+      <h3 class="about-sub-ttl">一度きりの人生、価値ある人生に<br>相手の立場になって深く考える
       </h3>
       <div class="cmn-txt">
-        私たちについての見出し対しての本文サブコピーが入る想定私たちについての見出し対しての本文<br class="s-pc">
-        私たちについての見出し対しての本文私たちについての見出し対しての本文私たちについての見出<br class="s-pc">
-        し対しての本文私たちについての私たちについての見出し対しての本文
+      一度きりの人生、価値ある人生に<br>VALUABLE LIFEは「相手の立場になって深く考える」をモットーにサービスを提供します。<br>「少子高齢化社会に対して適した人材の紹介をすることで人々の生活の質を向上し、社会に貢献し続ける」事で存在価値を見出します。
       </div>
       <a href="<?php bloginfo('url'); ?>/aboutus/" class="btn-theme01 btn-center"><span class="btn-theme01-arrow"></span> 私たちについてへ</a>
     </div>
@@ -72,8 +71,7 @@ get_header();
         事業内容
       </h2>
       <p class="cmn-txt">
-        私たちVALUABLE LIFEでは医療福祉に特化した <br class="s-sp-min">
-        転職エージェント業をはじめ、<br class="s-sp">医療福祉施設における採用支援も行っております。
+        私たちVALUABLE LIFEでは、看護・介護・保育に特化した人材紹介サービスを展開しております。
       </p>
       <ul class="service-list js-slider">
         <li class="service-item">
@@ -81,11 +79,9 @@ get_header();
             <img src="<?php print get_template_directory_uri(); ?>/assets/img/top/service_img01.png" alt="ナカムラ看護" width="320" height="194" loading="lazy">
           </div>
           <div class="service-info">
-            <h3 class="service-info-ttl">ナカムラ看護</h3>
-            <p class="intro-txt">給与や福利厚生などの条件面からの求人
-              情報の提供ではなく、求職者様の人生を
-              一緒に考えることをモットーにサポート
-              して参ります。</p>
+            <h3 class="service-info-ttl">看護師人材紹介</h3>
+            <p class="intro-txt">
+            「ナカムラ看護」は、看護業界に特化した人材紹介サービスです。<br>施設種類や診療科目、働き方など将来のビジョンに合わせて専任のキャリアアドバイザーが紹介します。</p>
           </div>
         </li>
         <li class="service-item">
@@ -96,11 +92,9 @@ get_header();
             </div>
           </div>
           <div class="service-info">
-            <h3 class="service-info-ttl">ナカムラ介護</h3>
-            <p class="intro-txt">給与や福利厚生などの条件面からの求人
-              情報の提供ではなく、求職者様の人生を
-              一緒に考えることをモットーにサポート
-              して参ります。</p>
+            <h3 class="service-info-ttl">介護士人材紹介</h3>
+            <p class="intro-txt">
+          「ナカムラ介護」は、介護福祉士、ケアマネージャー、社会福祉士など、福祉・介護従事者のための転職支援サービスです。<br>現場のリアルな情報はもちろん、入社後のキャリア相談などのアフターフォローまで丁寧にサポートします。</p>
           </div>
         </li>
         <li class="service-item">
@@ -108,11 +102,9 @@ get_header();
             <img src="<?php print get_template_directory_uri(); ?>/assets/img/top/service_img03.png" alt="ナカムラ保育" width="320" height="194" loading="lazy">
           </div>
           <div class="service-info">
-            <h3 class="service-info-ttl">ナカムラ保育</h3>
-            <p class="intro-txt">給与や福利厚生などの条件面からの求人
-              情報の提供ではなく、求職者様の人生を
-              一緒に考えることをモットーにサポート
-              して参ります。</p>
+            <h3 class="service-info-ttl">保育士人材紹介</h3>
+            <p class="intro-txt">
+          「ナカムラ保育」は、保育業界に特化した人材紹介サービスです。保育園を利用中のママ、パパ、保育士経験者のキャリアアドバイザーが、ご希望をもとに全国の保育園やこども園とマッチングします。</p>
           </div>
         </li>
       </ul> <!-- .service-list -->
@@ -134,9 +126,7 @@ get_header();
         <span>価値ある人材に価値ある人生を</span>
       </div>
       <p class="cmn-txt">
-        私たちについての見出し対しての本文サブコピーが入る想定私たちについての見出し対しての本文 <br class="s-pc">
-        私たちについての見出し対しての本文私たちについての見出し対しての本文私たちについての見出 <br class="s-pc">
-        し対しての本文私たちについての私たちについての見出し対しての本文
+      VALUABLE LIFE（バリュアブル ライフ）＝価値ある人生 <br class="s-pc">一度きりの人生を価値ある人生にすべく起業をしました。
       </p>
       <a href="#" class="btn-theme01"> <span class="btn-theme01-arrow"></span>トップメッセージへ </a>
     </div>

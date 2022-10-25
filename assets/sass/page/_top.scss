@@ -115,6 +115,12 @@
       padding: 3rem 0 0 10rem;
       font-size: 1.2rem;
     }
+
+    p {
+      @include mq() {
+        width: 24vw;
+      }
+    }
   }
 }
 
