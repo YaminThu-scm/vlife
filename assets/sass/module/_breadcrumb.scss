@@ -1,0 +1,25 @@
+/* ========================================================
+breadcrumb
+======================================================== */
+.breadcrumb {
+  position: relative;
+  margin: 2.3rem 0;
+  color: $black038;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+
+  @include mq(sp) {
+    margin-left: 5%;
+  }
+
+  @include mq() {
+    margin-left: calc((100% - 1200px)/2);
+  }
+
+  a {
+    color: $black038;
+    text-decoration: none;
+  }
+
+}

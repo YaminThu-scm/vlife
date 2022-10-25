@@ -1,0 +1,704 @@
+/* ========================================================
+ styles for front page
+======================================================== */
+
+// mainvisual
+.sec-mv {
+  position: relative;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    margin-bottom: 6rem;
+  }
+
+  @include mq() {
+    margin-bottom: 6.2rem;
+  }
+
+  .mv-img-blk {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    z-index: 1;
+    margin: 0 auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @include mq(sp) {
+      margin-bottom: 2rem;
+    }
+
+    @include mq() {
+      padding-bottom: 7.5rem;
+    }
+
+    .mv-img {
+      width: 33.33%;
+
+      @include mq(sp) {
+        height: 33.4rem;
+      }
+
+      @include mq() {
+        height: 67.5rem;
+
+        &.js-scale {
+          width: 22.3%;
+          height: 60.2rem;
+          animation: scalemove 2s;
+        }
+      }
+
+      &.mv-img01 {
+        background: url(#{$v-img-path}top/mv_img01.png) no-repeat center;
+        background-size: cover;
+      }
+
+      &.mv-img02 {
+        background: url(#{$v-img-path}top/mv_img02.png) no-repeat center;
+        background-size: cover;
+      }
+
+      &.mv-img03 {
+        background: url(#{$v-img-path}top/mv_img03.png) no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+
+  .mv-txt {
+    z-index: 2;
+    line-height: 1.52;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    @include mq(sp) {
+      margin-bottom: 2.5rem;
+      padding: 0 2.5rem;
+      font-size: 3.4rem;
+    }
+
+    @include mq(sp_min) {
+      font-size: 2.8rem;
+    }
+
+    @include mq() {
+      position: absolute;
+      top: 20%;
+      padding-left: 10rem;
+      font-size: 5.2rem;
+    }
+
+    .txt-highlight {
+      background: linear-gradient(to top, $color08 30%, transparent 30%);
+    }
+  }
+
+  .mv-sm-txt {
+    line-height: 1.7;
+    background: linear-gradient(93.07deg, #496cf6 25.06%, #a12bf4 99.99%);
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    @include m-font-redhat();
+
+    @include mq(sp) {
+      width: 100%;
+      padding: 2rem 2.5rem;
+      font-size: 1rem;
+    }
+
+    @include mq() {
+      position: absolute;
+      bottom: 0;
+      width: 77.7%;
+      height: 28.2rem;
+      padding: 3rem 0 0 10rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mq() {
+  @keyframes scalemove {
+    from {
+      width: 33.33%;
+      height: 67.5rem;
+    }
+
+    to {
+      width: 22.3%;
+      height: 60.2rem;
+    }
+  }
+}
+
+//sec-about
+.sec-about {
+  text-align: center;
+
+  @include mq(sp) {
+    margin-bottom: 6rem;
+  }
+
+  @include mq() {
+    margin-bottom: 6.3rem;
+  }
+
+  .about-inner {
+    margin: 0 auto;
+    background: url(#{$v-img-path}top/about_bg.png) no-repeat center/contain;
+
+    @include mq(sp) {
+      width: 100%;
+      padding: 0 2.5rem;
+    }
+
+    @include mq() {
+      padding: 7.8rem 3.2rem 7.7rem;
+      max-width: 74rem;
+    }
+
+    .sec-ttl {
+      @include mq(sp) {
+        margin-bottom: 1.8rem;
+      }
+
+      @include mq() {
+        margin-bottom: 4.1rem;
+      }
+
+      .eng-ttl {
+        letter-spacing: 0.17rem;
+      }
+    }
+
+    .about-sub-ttl {
+      line-height: 1.62;
+      color: $black038;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.5px;
+
+      @include mq(sp) {
+        margin-bottom: 2.1rem;
+        font-size: 2.2rem;
+      }
+
+      @include mq(sp_min) {
+        br {
+          display: none;
+        }
+      }
+
+      @include mq() {
+        margin-bottom: 1.8rem;
+        font-size: 3rem;
+      }
+    }
+
+    .cmn-txt {
+      @include mq(sp) {
+        margin-bottom: 2.7rem;
+        text-align: left;
+        letter-spacing: 0;
+      }
+
+      @include mq() {
+        margin-bottom: 6.3rem;
+        text-align: center;
+        letter-spacing: 0.02rem;
+      }
+    }
+  }
+}
+
+//sec-service
+.sec-service {
+  position: relative;
+  background-color: $color03;
+  text-align: center;
+
+  @include mq(sp) {
+    margin-bottom: 4.3rem;
+    padding: 4.2rem 0 9.5rem;
+  }
+
+  @include mq() {
+    margin-bottom: 10rem;
+    padding: 10rem 0 10rem;
+  }
+
+  @include mq(sp) {
+    .slick-slide {
+      margin: 0 7.5px;
+
+      img {
+        width: 100%;
+        height: 19.7rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .inner {
+    position: relative;
+    z-index: 5;
+
+    @include mq(sp) {
+      padding: 0;
+    }
+
+    @include mq() {
+      max-width: 120rem;
+    }
+
+    .sec-ttl {
+      letter-spacing: 0.08rem;
+
+      @include mq(sp) {
+        margin-bottom: 1.4rem;
+      }
+
+      @include mq() {
+        margin-bottom: 2.2rem;
+      }
+
+      .eng-ttl {
+        line-height: 1.75;
+        font-weight: 700;
+
+        @include mq(sp) {
+          letter-spacing: 0.11rem;
+        }
+
+        @include mq() {
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+
+    .cmn-txt {
+      text-align: center;
+
+      @include mq(sp) {
+        margin-bottom: 2.8rem;
+        letter-spacing: 0.1px;
+      }
+
+      @include mq(sp_min) {
+        .s-sp-min {
+          display: none;
+        }
+      }
+
+      @include mq() {
+        margin-bottom: 4rem;
+      }
+    }
+
+    .service-list {
+      @include mq(sp) {
+        column-gap: 1.5rem;
+      }
+
+      @include mq() {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+      }
+
+      .service-item {
+        box-shadow: 1rem 1rem 4.5rem 0 rgba(0 0 0 / 5%);
+        background-color: $white;
+
+        @include mq(sp) {
+          width: 100%;
+        }
+
+        @include mq() {
+          width: 32%;
+          max-width: 38.67rem;
+        }
+
+        .service-img {
+          position: relative;
+
+          @include mq() {
+            img {
+              width: 100%;
+            }
+          }
+
+          .corner-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 24.4%;
+            height: 40.4%;
+            padding: 0.9rem 1.3rem 0.8rem;
+            background-color: $white;
+            max-width: 7.8rem;
+            max-height: 7.9rem;
+            border-radius: 0 2.5rem 0 0;
+
+            @include mq(sp) {
+              img {
+                height: auto;
+              }
+            }
+          }
+        }
+
+        .service-info {
+          @include mq(sp) {
+            padding: 1.3rem 2.3rem 2.5rem;
+          }
+
+          @include mq() {
+            padding: 2rem 3rem 3rem;
+          }
+
+          .service-info-ttl {
+            line-height: 1.45;
+            margin-bottom: 1.5rem;
+            color: $black038;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.08rem;
+
+            @include mq(sp) {
+              font-size: 1.8rem;
+            }
+
+            @include mq() {
+              font-size: 2.2rem;
+            }
+          }
+
+          .intro-txt {
+            line-height: 1.8;
+            font-weight: 400;
+            text-align: left;
+            letter-spacing: 0.03rem;
+
+            @include mq(sp) {
+              font-size: 1.3rem;
+            }
+
+            @include mq() {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .service-bg-blk {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 11.5rem 0;
+    background: linear-gradient(93.07deg, $color02 25.06%, $color01 99.99%);
+    border-radius: 0px;
+
+    @include mq(sp) {
+      height: 36.5rem;
+    }
+
+    @include mq() {
+      height: 23rem;
+    }
+  }
+
+  .slick-dots li button {
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .slick-dots li button:before {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: $white;
+    content: "" !important;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  .slick-dots li.slick-active button:before {
+    width: 1rem;
+    height: 1rem;
+    opacity: 1;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+  }
+
+  .slick-dots {
+    bottom: -4.5rem !important;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 53% !important;
+    z-index: 1;
+    width: 2.5rem !important;
+    height: 2.6rem !important;
+    border: 1px solid $white;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate(0, -53%) !important;
+    border-radius: 100px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      width: 0.6rem;
+      height: 0.7rem;
+      margin: 0 auto;
+      content: " " !important;
+      transform: translateY(-50%);
+    }
+  }
+
+  .slick-prev {
+    left: 3%;
+
+    &::before {
+      background: url(#{$v-img-path}icon/pre_arrow_icn.png) no-repeat
+        center/contain !important;
+    }
+  }
+
+  .slick-next {
+    right: 3%;
+
+    &:before {
+      background: url(#{$v-img-path}icon/next_arrow_icn.png) no-repeat
+        center/contain !important;
+    }
+  }
+}
+
+//sec-top-msg
+.sec-top-msg {
+  text-align: center;
+
+  @include mq(sp) {
+    margin-bottom: 6rem;
+  }
+
+  @include mq() {
+    margin-bottom: 10.7rem;
+  }
+
+  .inner {
+    .sec-ttl {
+      @include mq(sp) {
+        margin-bottom: 2.2rem;
+      }
+
+      @include mq() {
+        margin-bottom: 4.1rem;
+      }
+
+      .eng-ttl {
+        @include mq(sp) {
+          letter-spacing: 0.12rem;
+        }
+
+        @include mq() {
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+
+    .top-msg-img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .caption-txt {
+      position: relative;
+      line-height: 1.64;
+      font-weight: 700;
+      letter-spacing: 0.03rem;
+
+      @include mq(sp) {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
+      }
+
+      @include mq(sp_min) {
+        font-size: 1.7rem;
+      }
+
+      @include mq() {
+        margin-top: -3.1rem;
+        margin-bottom: 2.6rem;
+        font-size: 3rem;
+      }
+
+      span {
+        padding: 0 0.8rem;
+        background-color: $color04;
+        color: $white;
+      }
+    }
+
+    .cmn-txt {
+      @include mq(sp) {
+        margin-bottom: 2.7rem;
+        text-align: left;
+      }
+
+      @include mq() {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+//sec-news
+.sec-news {
+  @include mq(sp) {
+    margin-top: 6rem;
+    padding-bottom: 7.4rem;
+    background: url(#{$v-img-path}top/oshirase_news_bg_sp.png) no-repeat;
+    background-size: 36.5rem 28.1rem;
+    background-position: center top 6.5rem;
+  }
+
+  @include mq() {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding: 0 5rem 10rem;
+    background: url(#{$v-img-path}top/oshirase_news_bg.png) no-repeat;
+    background-size: contain;
+    background-position: left bottom -18px;
+    max-width: 130rem;
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(sp) {
+      flex-direction: column;
+    }
+
+    .sec-ttl {
+      @include mq(sp) {
+        width: 100%;
+        text-align: center;
+      }
+
+      @include mq() {
+        width: 38%;
+        text-align: left;
+      }
+
+      .eng-ttl {
+        @include mq(sp) {
+          letter-spacing: 0.1rem;
+        }
+
+        @include mq() {
+          letter-spacing: 0.3rem;
+        }
+      }
+    }
+
+    .news-content {
+      @include mq(sp) {
+        width: 100%;
+        padding-top: 1.9rem;
+        text-align: center;
+        max-width: 100%;
+      }
+
+      @include mq() {
+        width: 70%;
+        padding-top: 1.3rem;
+        text-align: right;
+        max-width: 60rem;
+      }
+
+      .news-list {
+        @include mq(sp) {
+          margin-bottom: 3rem;
+          text-align: left;
+        }
+
+        .news-tile {
+          display: flex;
+          align-items: center;
+          line-height: 2.03;
+          font-size: 1.5rem;
+          letter-spacing: 0.01rem;
+          column-gap: 2rem;
+          border-bottom: 1px solid $color05;
+
+          @include mq(sp) {
+            flex-direction: column;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+          }
+
+          @include mq() {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 0.6rem;
+          }
+
+          .news-date {
+            color: $black038;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            @include m-font-redhat();
+
+            @include mq(sp) {
+              width: 100%;
+              line-height: 1.4;
+              font-size: 1.4rem;
+            }
+
+            @include mq() {
+              line-height: 1.323;
+              font-size: 1.5rem;
+            }
+          }
+
+          a {
+            line-height: 2.03;
+            color: $black038;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 0.01rem;
+
+            @include mq(sp) {
+              width: 100%;
+              font-size: 1.4rem;
+            }
+
+            @include mq(sp_min) {
+              font-size: 1.3rem;
+            }
+
+            @include mq() {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

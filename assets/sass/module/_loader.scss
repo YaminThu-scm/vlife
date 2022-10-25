@@ -1,0 +1,89 @@
+.loader {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  background: $white;
+
+  .loader-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .loader-logo {
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+
+    @include mq(sp) {
+      margin-bottom: 2rem;
+      max-width: 181px;
+      img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    }
+
+    @include mq() {
+      margin-bottom: 6.3rem;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.textanime {
+  line-height: 1.6;
+  font-weight: 700;
+  opacity: 0;
+
+  @include mq(sp) {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  @include mq() {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+}
+
+.textanime span:nth-child(6),
+.textanime span:nth-child(7),
+.textanime span:nth-child(14),
+.textanime span:nth-child(15) {
+  background: linear-gradient(93.41deg, #496cf6 32%, #a12bf4 45.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@include mq(sp) {
+  .textanime span:nth-child(9)::after {
+    white-space: pre;
+    content: "\a";
+  }
+}
