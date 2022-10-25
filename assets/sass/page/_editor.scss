@@ -262,6 +262,12 @@
       width: 25%;
       font-weight: 700;
       font-style: normal;
+      vertical-align: top;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
     }
   }
 
@@ -289,3 +295,54 @@
   }
 }
 
+.welfare-benefit {
+  max-width: 120rem;
+  margin: 0 auto;
+  @include mq (sp) {
+    padding: 0 2rem;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    @include mq (sp) {
+      justify-content: space-between;
+    }
+    li {
+      width: 23%;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+      @include mq (sp) {
+        width: 45%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+      .number {
+        font-weight: 700;
+        font-size: 5rem;
+        color: $color09;
+        @include mq (sp) {
+          font-size: 3.5rem;
+        }
+      }
+      .welfare-ttl {
+        @include mq (sp) {
+          padding-top: 1rem;
+          font-size: 1.4rem;
+        }
+      }
+      .clock-img {
+        max-width: 4.5rem;
+        margin: 0.6rem auto;
+      }
+
+      .welfare-desc {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        @include mq (sp) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
