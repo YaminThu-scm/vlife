@@ -26,9 +26,9 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $slide_eng_ttl = get_field('slide-eng-ttl');
-$slide_jp_ttl = get_field('slide-jp-ttl')?: 'テキストが入ります';
+$slide_jp_ttl = get_field('slide-jp-ttl');
 $info_slide_ttl = get_field('info-slide-ttl')?: 'テキストが入ります';
-$info_dtl = get_field('info-dtl')?: 'テキストが入ります';
+$info_dtl = get_field('info-dtl');
 
 ?>
 
@@ -36,17 +36,21 @@ $info_dtl = get_field('info-dtl')?: 'テキストが入ります';
   <div class="bg-slide">
     <div class="slide-ttl">
       <?php if($slide_eng_ttl) { ?><span class="slide-eng-ttl"><?php echo $slide_eng_ttl; ?></span><?php } ?>
-      <span class="slide-jp-ttl"><?php echo $slide_jp_ttl; ?></span>
+      <?php if($slide_jp_ttl) { ?>
+        <span class="slide-jp-ttl"><?php echo $slide_jp_ttl; ?></span>
+      <?php } ?>
     </div>
   </div>
-  <div class="info-slide">
+  <div class="info-slide <?php if(!$info_dtl) { ?>slide-mrg <?php } ?>">
     <div class="info-slide-ttl">
       <span><?php echo $info_slide_ttl; ?></span>
     </div>
     <div class="info-dtl">
+      <?php if($info_dtl) { ?>
         <p>
           <?php echo $info_dtl; ?>
         </p>
+        <?php } ?>
     </div>
   </div>
 </div>
