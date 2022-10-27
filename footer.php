@@ -44,8 +44,8 @@
       お問い合わせ</h2>
     <p class="cmn-txt">VALUABLE LIFEへの各種お問い合わせは<br class="s-sp">こちらからお願いします。</p>
     <div class="btn-blk">
-      <a href="#" class="btn btn-theme02 btn-line"><span class="hover-line">採用ご担当者様はこちらから</span><span class="btn-theme02-arrow"></span></a>
-      <a href="#" class="btn btn-theme02 btn-line"><span class="hover-line">求職者様お問い合わせ</span><span class="btn-theme02-arrow"></span></a>
+      <a href="<?php bloginfo('url'); ?>/recruiter_contact/" class="btn btn-theme02 btn-line"><span class="hover-line">採用ご担当者様はこちらから</span><span class="btn-theme02-arrow"></span></a>
+      <a href="<?php bloginfo('url'); ?>/worker_contact/" class="btn btn-theme02 btn-line"><span class="hover-line">求職者様お問い合わせ</span><span class="btn-theme02-arrow"></span></a>
     </div>
   </section>
   <!-- /.sec-contact-blk -->
@@ -94,8 +94,8 @@
           <li><a href="<?php bloginfo('url'); ?>/news/">お知らせ</a></li>
         </ul>
         <div class="ft-btn-blk">
-          <a href="#" class="btn btn-theme03 btn-line"><span class="hover-line">採用ご担当者様はこちらから</span><span class="btn-theme03-arrow"></span></a>
-          <a href="#" class="btn btn-theme03 contact-btn btn-line"><span class="hover-line">求職者様お問い合わせ</span><span class="btn-theme03-arrow"></span></a>
+          <a href="<?php bloginfo('url'); ?>/recruiter_contact/"  class="btn btn-theme03 btn-line"><span class="hover-line">採用ご担当者様はこちらから</span><span class="btn-theme03-arrow"></span></a>
+          <a href="<?php bloginfo('url'); ?>/worker_contact/"  class="btn btn-theme03 contact-btn btn-line"><span class="hover-line">求職者様お問い合わせ</span><span class="btn-theme03-arrow"></span></a>
         </div>
         <div class="copyright">
           Copyright &copy; VALUABLE LIFE Co., Ltd.<br class="s-sp"> All Rights Reserved.
