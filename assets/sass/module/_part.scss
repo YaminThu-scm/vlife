@@ -428,7 +428,7 @@ img {
         }
 
         @include mq() {
-          background-size: 150%;
+          background-size: auto 150%;
         }
       }
     }
@@ -462,7 +462,7 @@ img {
       margin-left: auto;
       padding: 9.2rem 0 7.7rem;
       background: url(#{$v-img-path}top/info_blk_bg01.png) no-repeat;
-      background-size: 100%;
+      background-size: auto 100%;
       background-position: center;
       max-width: 60rem;
       background-attachment: fixed;
@@ -563,7 +563,7 @@ img {
       margin-right: auto;
       margin-left: auto;
       background: url(#{$v-img-path}top/info_blk_bg02.png) no-repeat;
-      background-size: 100%;
+      background-size: auto 101%;
       background-position: center;
       max-width: 59.8rem;
       background-attachment: fixed;
@@ -738,6 +738,65 @@ img {
 
         a {
           display: inline-block;
+        }
+      }
+    }
+  }
+}
+//privacy-policy
+.privacy-policy{
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  .pg-content{
+    max-width: 120rem;
+    @include mq(){
+      margin: 7.5rem auto 3rem;
+    }
+    @include mq(sp){
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    .pg-ttl{
+      @include mq(sp){
+        margin-left: auto;
+      }
+    }
+    .breadcrumb{
+      @include mq(sp){
+        margin-left: auto;
+      }
+    }
+    h2{
+      margin: 1.5rem 0 2.5rem;
+      @include mq(){
+        font-size: 3rem;
+      }
+      @include mq(sp){
+        font-size: 2rem;
+      }
+    }
+    p{
+      padding-bottom: 2rem;
+      line-height: 1.8;
+      letter-spacing: 0.7px;
+      @include mq(){
+        font-size: 1.5rem;
+      }
+      @include mq(sp){
+        font-size: 1.4rem;
+      }
+    }
+    ul{
+      margin-bottom: 3rem;
+      li{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        padding-bottom: 1rem;
+        &::before{
+          content: "* ";
+        }
+        @include mq(sp){
+          font-size: 1.4rem;
         }
       }
     }
