@@ -22,12 +22,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <link rel="canonical" href="●●●">
+  <title><?php wp_title(' | ', true, 'right'); ?>株式会社VALUABLE LIFE コーポレートサイト
+</title>
   <?php /* OGP settings ---------------------------------- */ ?>
   <meta property="og:type" content="website">
-  <meta property="og:url" content="●●●">
-  <meta property="og:site_name" content="●●●">
-  <meta property="og:title" content="●●●">
-  <meta property="og:description" content="●●●">
+  <meta property="og:url" content="https://valuable-life.co.jp/">
+  <meta property="og:site_name" content="ValuableLife">
+  <meta property="og:title" content="株式会社VALUABLE LIFE コーポレートサイト">
+  <meta property="og:description" content="一度きりの人生、価値ある人生に。VALUABLE LIFEは「相手の立場になって深く考える」をモットーにサービスを提供します。「少子高齢化社会に対して適した人材の紹介をすることで人々の生活の質を向上し、社会に貢献し続ける」事で存在価値を見出します。">
   <meta property="og:image" content="<?php print get_template_directory_uri(); ?>/assets/img/ogp.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <!-- favicon, touch-icon -->
