@@ -14,7 +14,7 @@ get_header();
   <?php the_breadcrumb(); ?>
 </div>
 <!-- =============== content ============== -->
-<div class="content">
+<ul class="news-list">
   <?php
     if (have_posts()) : ?>
     <?php  $category = get_the_category($post->ID);
@@ -22,17 +22,24 @@ get_header();
       $cat_name = $category[0]->name;
       $cat_slug = $category[0]->slug; ?>
       <?php
-      query_posts('category_name='.$cat_slug.'&posts_per_page=3&order=DESC&paged='.$paged);
+      query_posts('category_name='.$cat_slug.'&posts_per_page=1&order=DESC&paged='.$paged);
       ?>
     <?php while (have_posts()) : the_post(); ?>
-      <div>
-        <h4><?php the_title(); ?></h4>
-        <p><?php the_content(); ?></p>
-      </div>
+		<li>
+        <a href="<?php the_permalink() ?>">
+					<p class="news-date"><?php echo get_the_date('Y.m.d'); ?></p>
+					<p class="news-ttl"><?php the_title(); ?></p>
+				</a>
+        </li>
     <?php endwhile; ?>
-   <?php endif; ?>
+				
+   <?php endif; ?><?php the_posts_pagination(array(
+                'prev_text' => false,
+                'next_text' => false,
+                )); ?>
    <?php wp_reset_query(); ?>
-</div>
+		</ul>
+    
 <!-- ./content -->
 
 <?php

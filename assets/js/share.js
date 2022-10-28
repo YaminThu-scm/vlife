@@ -200,9 +200,9 @@ $(window).ready(function(){
   }, 7000);
 });
 
-$(window).bind('resize', function() {
-  location.reload();
-});
+// $(window).bind('resize', function() {
+//   location.reload();
+// });
 
 // slider event
 $(document).ready(function () {

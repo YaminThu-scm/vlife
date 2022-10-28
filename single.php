@@ -15,13 +15,11 @@ get_header();
   <?php the_breadcrumb(); ?>
 </div>
 
-<div class="content">
+<div class="news-list">
   <h2><?php the_title(); ?></h2>
-  <?php
-  while( have_posts() ): the_post();
-    the_content('');
-  endwhile;
+  <?php the_content()
   ?>
+  </p>
 </div>
 <!-- ./ single-page -->
 

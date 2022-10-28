@@ -30,8 +30,8 @@ get_header();
   </div>
   <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
     <?php if (has_post_thumbnail()) {
-      echo '<div class="pg-mv" style="background: url('.esc_url($featured_img_url).')">';
-    } ?></div>
+      echo '<div class="pg-mv" style="background: url('.esc_url($featured_img_url).')"></div>';
+    } ?>
   <!-- ===============  Breadcrumb ============== -->
   <div class="breadcrumb clearfix">
     <?php the_breadcrumb(); ?>

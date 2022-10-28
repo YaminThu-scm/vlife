@@ -41,7 +41,8 @@
     position: relative;
     left: 0;
     top: 0;
-    display: block;
+    display: flex;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -63,6 +64,21 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    @include mq(sp) {
+        height: auto;
+    }
+    div {
+        @include mq(sp) {
+            height: 100%;
+        }
+        .service-item {
+            @include mq(sp) {
+                display: flex !important;
+                flex-direction: column;
+                height: 100%;
+            }
+        }
+    }
     [dir="rtl"] & {
         float: right;
     }

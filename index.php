@@ -64,7 +64,7 @@ get_header();
     </div>
   </section> 
   <!-- /.sec-about -->
-  <section class="sec-service" data-aos="fade-up">
+  <section class="sec-service" id="service" data-aos="fade-up">
     <div class="inner">
       <h2 class="sec-ttl">
         <span class="eng-ttl">service</span>

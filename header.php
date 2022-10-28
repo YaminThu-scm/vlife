@@ -53,7 +53,7 @@
   </script>
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <!-- ===============  header ============== -->
   <header class="header">
     <div class="header-theme-pc jsHeadPos">
@@ -94,7 +94,7 @@
               <a href="<?php bloginfo('url'); ?>/recruit/">採用情報</a>
             </li>
             <li class="menu-link">
-              <a href="<?php bloginfo('url'); ?>/news/">お知らせ</a>
+              <a href="<?php echo site_url(); ?>/news/">お知らせ</a> 
             </li>
           </ul>
           <!-- ./ gnavIn -->
